@@ -20,7 +20,7 @@ public class StatController {
 
     @GetMapping
     public Stat getStats() {
-        var stat = new Stat();
+        Stat stat = new Stat();
         stat.setMembers(personRepository.findAll().size());
         return stat;
     }
